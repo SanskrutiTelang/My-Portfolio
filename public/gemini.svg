@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <!-- Background -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FAF8F5" />
+    </radialGradient>
+
+    <!-- Color Gradients -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3E086" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#9A7510" />
+    </linearGradient>
+
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1D3557" />
+      <stop offset="100%" stop-color="#0F1E36" />
+    </linearGradient>
+
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2A9D8F" />
+      <stop offset="100%" stop-color="#176157" />
+    </linearGradient>
+
+    <linearGradient id="coralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E76F51" />
+      <stop offset="100%" stop-color="#B84328" />
+    </linearGradient>
+
+    <!-- Arc Path for Arching Text -->
+    <path id="textArcTop" d="M 170,500 A 330,330 0 0,1 830,500" fill="none" />
+    <path id="textArcBottom" d="M 230,500 A 270,270 0 0,0 770,500" fill="none" />
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="1000" fill="url(#bgGrad)" />
+
+  <!-- Outer Circular Frame -->
+  <circle cx="500" cy="500" r="370" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" />
+  <circle cx="500" cy="500" r="362" fill="none" stroke="url(#goldGrad)" stroke-width="1" stroke-dasharray="4,4" />
+
+  <!-- Top Arch Text: SANSKRUTI -->
+  <text font-family="'Playfair Display', 'Cinzel', 'Georgia', serif" font-size="44" font-weight="bold" fill="url(#navyGrad)" letter-spacing="10">
+    <textPath href="#textArcTop" startOffset="50%" text-anchor="middle">SANSKRUTI</textPath>
+  </text>
+
+  <!-- Bottom Arch Text: CREATIVE DESIGN -->
+  <text font-family="'Montserrat', 'Arial', sans-serif" font-size="20" font-weight="600" fill="url(#navyGrad)" letter-spacing="8">
+    <textPath href="#textArcBottom" startOffset="50%" text-anchor="middle">CREATIVE DESIGN</textPath>
+  </text>
+
+  <!-- Ornamental Crest & Foliage -->
+  <g id="ornamental-flourishes">
+    <!-- Crown Top Motifs -->
+    <path d="M 500 230 C 490 260 460 280 440 285 C 470 290 495 270 500 230 Z" fill="url(#navyGrad)" />
+    <path d="M 500 230 C 510 260 540 280 560 285 C 530 290 505 270 500 230 Z" fill="url(#navyGrad)" />
+    <path d="M 500 210 C 480 245 440 265 410 270 C 450 270 488 245 500 210 Z" fill="url(#tealGrad)" />
+    <path d="M 500 210 C 520 245 560 265 590 270 C 550 270 512 245 500 210 Z" fill="url(#tealGrad)" />
+    <path d="M 500 190 C 488 220 458 230 430 240 C 468 235 493 220 500 190 Z" fill="url(#goldGrad)" />
+    <path d="M 500 190 C 512 220 542 230 570 240 C 532 235 507 220 500 190 Z" fill="url(#goldGrad)" />
+
+    <!-- Side Leaf Flourishes (Left) -->
+    <path d="M 270 480 C 300 420 380 360 430 380 C 380 390 320 440 290 500 Z" fill="url(#tealGrad)" />
+    <path d="M 280 520 C 320 580 380 640 450 620 C 390 610 340 560 300 510 Z" fill="url(#coralGrad)" />
+    <path d="M 310 380 C 350 340 400 320 440 330 C 390 340 350 370 320 410 Z" fill="url(#coralGrad)" />
+    <path d="M 310 610 C 350 650 400 660 450 640 C 390 640 350 620 320 580 Z" fill="url(#goldGrad)" />
+
+    <!-- Side Leaf Flourishes (Right) -->
+    <path d="M 730 480 C 700 420 620 360 570 380 C 620 390 680 440 710 500 Z" fill="url(#tealGrad)" />
+    <path d="M 720 520 C 680 580 620 640 550 620 C 610 610 660 560 700 510 Z" fill="url(#coralGrad)" />
+    <path d="M 690 380 C 650 340 600 320 560 330 C 610 340 650 370 680 410 Z" fill="url(#coralGrad)" />
+    <path d="M 690 610 C 650 650 600 660 550 640 C 610 640 650 620 680 580 Z" fill="url(#goldGrad)" />
+
+    <!-- Bottom Lotus Floral Base -->
+    <path d="M 500 740 C 480 700 440 680 410 680 C 440 710 475 735 500 740 Z" fill="url(#coralGrad)" />
+    <path d="M 500 740 C 520 700 560 680 590 680 C 560 710 525 735 500 740 Z" fill="url(#coralGrad)" />
+    <path d="M 500 755 C 485 720 450 710 430 710 C 455 730 485 745 500 755 Z" fill="url(#goldGrad)" />
+    <path d="M 500 755 C 515 720 550 710 570 710 C 545 730 515 745 500 755 Z" fill="url(#goldGrad)" />
+  </g>
+
+  <!-- Central Interlocking ST Monogram -->
+  <g id="st-monogram" transform="translate(10, -5)">
+    <!-- S Glyph -->
+    <text x="350" y="570" font-family="'Playfair Display', 'Georgia', serif" font-size="200" font-weight="bold" fill="url(#navyGrad)">S</text>
+    <!-- T Glyph -->
+    <text x="490" y="570" font-family="'Playfair Display', 'Georgia', serif" font-size="200" font-weight="bold" fill="url(#navyGrad)">T</text>
+
+    <!-- Connecting Ribbon Swirl -->
+    <path d="M 400 520 C 450 580 520 590 590 530 C 540 575 460 565 415 515 Z" fill="url(#tealGrad)" />
+    <circle cx="500" cy="488" r="10" fill="url(#tealGrad)" />
+    <circle cx="500" cy="488" r="5" fill="url(#goldGrad)" />
+  </g>
+</svg>
